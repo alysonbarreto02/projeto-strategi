@@ -1,6 +1,11 @@
-export const myData = (r) => {
-  inputLogradouro.value = r.logradouro;
-  inputCidade.value = r.localidade;
-  inputBairro.value = r.bairro;
-  inputEstado.value = r.uf;
-};
+
+export const isValidCPF = (cpf) => {
+  cpf = cpf.replace(/[^0-9]/gi, "");
+  if (cpf.length == 11) {
+      return true;
+  }{
+    return false
+  }
+  
+}
+
